@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleyton Braga Costa | Currículo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones via Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra Superior de Ações -->
+    <nav class="top-bar no-print">
+        <div class="container nav-content">
+            <span class="brand">Cleyton Braga Costa</span>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-outline" title="Alternar Tema">
+                    <i class="fas fa-moon"></i> <span>Modo Escuro</span>
+                </button>
+                <button onclick="window.print()" class="btn-primary">
+                    <i class="fas fa-print"></i> Imprimir / Salvar PDF
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container resume-wrapper">
+        <!-- Cabeçalho -->
+        <header class="resume-header">
+            <div class="header-info">
+                <h1>CLEYTON BRAGA COSTA</h1>
+                <p class="subtitle">Estudante de Análise e Desenvolvimento de Sistemas | TI & Administrativo</p>
+                
+                <div class="contact-grid">
+                    <a href="https://wa.me/5511966305912" target="_blank" class="contact-item" title="Abrir WhatsApp">
+                        <i class="fab fa-whatsapp"></i> (11) 96630-5912
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span id="email-text">cleytonbraga1011@gmail.com</span>
+                        <button id="copy-email" class="btn-copy no-print" title="Copiar E-mail">
+                            <i class="far fa-copy"></i>
+                        </button>
+                        <span id="copy-feedback" class="copy-toast">Copiado!</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Rua Perobas Verdes, 60 - Jardim Noronha, São Paulo - SP, 04853-187
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filtro Interativo por Área -->
+        <section class="filter-section no-print">
+            <span class="filter-label"><i class="fas fa-filter"></i> Filtrar foco da vaga:</span>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Visão Completa</button>
+                <button class="filter-btn" data-filter="ti">Foco em Tecnologia (TI)</button>
+                <button class="filter-btn" data-filter="adm">Foco em Administrativo / Logística</button>
+            </div>
+        </section>
+
+        <!-- Objetivo -->
+        <section class="card">
+            <h2><i class="fas fa-bullseye"></i> Objetivo Profissional</h2>
+            <p>
+                Conquistar uma oportunidade de estágio nas áreas de <strong>Tecnologia da Informação</strong> e <strong>Administrativa</strong>, unindo minha experiência em suporte técnico e em rotinas administrativas ao conhecimento de Análise e Desenvolvimento de Sistemas, para contribuir com a organização, a eficiência e a melhoria contínua dos processos da empresa.
+            </p>
+        </section>
+
+        <!-- Resumo -->
+        <section class="card">
+            <h2><i class="fas fa-user-tie"></i> Resumo Profissional</h2>
+            <p>
+                Estudante de Análise e Desenvolvimento de Sistemas na FMU, com experiência no INED em duas frentes: como <strong>Auxiliar de Secretaria</strong>, apoiando rotinas administrativas escolares, e como <strong>Assistente de TI</strong>, atuando com suporte ao usuário, manutenção de equipamentos e sistemas, montagem de computadores e notebooks e apoio à infraestrutura. Combino organização, atenção a detalhes e cuidado com documentos a habilidades técnicas e facilidade para aprender. Busco uma oportunidade para aplicar meus conhecimentos e contribuir com a melhoria dos processos da empresa, seja na área de TI ou administrativa.
+            </p>
+        </section>
+
+        <!-- Experiência Profissional -->
+        <section class="card">
+            <h2><i class="fas fa-briefcase"></i> Experiência Profissional</h2>
+            
+            <div class="timeline">
+                <!-- Experiência 1 -->
+                <div class="timeline-item filter-item" data-category="adm">
+                    <div class="timeline-header">
+                        <h3>INED — Auxiliar de Secretaria</h3>
+                        <span class="badge badge-adm">Administrativo</span>
+                    </div>
+                    <p>
+                        Apoio às rotinas administrativas escolares, incluindo a organização e a atualização de documentos e registros, como fichas, declarações e históricos escolares. Responsável pelo registro e encaminhamento de documentos, além de prestar apoio diário à direção e à secretaria nas atividades administrativas.
+                    </p>
+                </div>
+
+                <!-- Experiência 2 -->
+                <div class="timeline-item filter-item" data-category="ti">
+                    <div class="timeline-header">
+                        <h3>INED — Assistente de TI</h3>
+                        <span class="badge badge-ti">Tecnologia da Informação</span>
+                    </div>
+                    <p>
+                        Suporte ao usuário, manutenção preventiva e corretiva de equipamentos e sistemas, montagem e desmontagem de computadores e notebooks, instalação e configuração de software, suporte presencial e remoto, diagnóstico e resolução de problemas de hardware e software, otimização e performance de sistemas Windows, além de gerenciamento de redes e suporte à infraestrutura de TI, visando sempre a melhoria contínua e a eficiência dos processos tecnológicos.
+                    </p>
+                </div>
+
+                <!-- Experiência 3 -->
+                <div class="timeline-item filter-item" data-category="adm">
+                    <div class="timeline-header">
+                        <h3>CYM — Assistente de Logística</h3>
+                        <span class="badge badge-adm">Logística & Operações</span>
+                    </div>
+                    <p>
+                        Suporte às operações logísticas, com acompanhamento de estoque, pedidos, recebimento e expedição de mercadorias. Responsável pela organização e conferência de documentos, atualização de informações em sistemas e planilhas, acompanhamento de entregas e apoio às atividades administrativas e operacionais do setor.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formação Acadêmica -->
+        <section class="card">
+            <h2><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h2>
+            <div class="education-item">
+                <h3>Graduação — Análise e Desenvolvimento de Sistemas</h3>
+                <p class="institution">Centro Universitário FMU | FIAM-FAAM</p>
+                <span class="date">02/2024 – 06/2026 (Previsão)</span>
+            </div>
+        </section>
+
+        <!-- Cursos Complementares -->
+        <section class="card">
+            <h2><i class="fas fa-certificate"></i> Cursos & Especializações</h2>
+            <div class="courses-grid">
+                <div class="course-card filter-item" data-category="ti">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <h4>Algoritmos e Lógica de Programação</h4>
+                        <span>Udemy</span>
+                    </div>
+                </div>
+                <div class="course-card filter-item" data-category="ti">
+                    <i class="fas fa-terminal"></i>
+                    <div>
+                        <h4>Lógica de Programação com C e C++</h4>
+                        <span>Udemy</span>
+                    </div>
+                </div>
+                <div class="course-card filter-item" data-category="ti">
+                    <i class="fab fa-python"></i>
+                    <div>
+                        <h4>Principais Estruturas de Dados do Python</h4>
+                        <span>Udemy</span>
+                    </div>
+                </div>
+                <div class="course-card filter-item" data-category="ti adm">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>
+                        <h4>Análise de Dados com Python e Pandas</h4>
+                        <span>Udemy</span>
+                    </div>
+                </div>
+                <div class="course-card filter-item" data-category="ti adm">
+                    <i class="fas fa-laptop"></i>
+                    <div>
+                        <h4>Informática do Básico ao Avançado</h4>
+                        <span>Udemy</span>
+                    </div>
+                </div>
+                <div class="course-card filter-item" data-category="adm">
+                    <i class="fas fa-file-excel"></i>
+                    <div>
+                        <h4>Pacote Office (Excel, Word, PowerPoint)</h4>
+                        <span>Udemy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conhecimentos e Habilidades -->
+        <section class="card">
+            <h2><i class="fas fa-tools"></i> Conhecimentos & Competências</h2>
+            <div class="skills-columns">
+                <!-- Coluna TI -->
+                <div class="skill-group filter-item" data-category="ti">
+                    <h3><i class="fas fa-microchip"></i> Tecnologia da Informação</h3>
+                    <ul>
+                        <li>Suporte técnico presencial e remoto ao usuário</li>
+                        <li>Manutenção preventiva e corretiva de hardware e software</li>
+                        <li>Montagem, desmontagem e configuração de PCs e notebooks</li>
+                        <li>Instalação, configuração e otimização de sistemas Windows</li>
+                        <li>Noções de gerenciamento de redes e infraestrutura de TI</li>
+                        <li>Lógica de programação (Python, Pandas, C e C++)</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna Administrativa -->
+                <div class="skill-group filter-item" data-category="adm">
+                    <h3><i class="fas fa-folder-open"></i> Administrativas e Operacionais</h3>
+                    <ul>
+                        <li>Organização, arquivamento e atualização de documentos e registros</li>
+                        <li>Rotinas administrativas e apoio à secretaria escolar</li>
+                        <li>Registro, conferência e encaminhamento de documentos (fichas, declarações e históricos)</li>
+                        <li>Acompanhamento de estoque, pedidos, recebimento, expedição e entregas</li>
+                        <li>Atualização de informações em sistemas e planilhas; Pacote Microsoft Office</li>
+                        <li>Organização, higienização e conservação de ambientes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer no-print">
+        <p>© 2026 Cleyton Braga Costa — Desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
